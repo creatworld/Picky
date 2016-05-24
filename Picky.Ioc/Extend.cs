@@ -79,7 +79,7 @@ namespace Picky.Ioc
         /// </summary>
         /// <param name="target">载体</param>
         /// <param name="mapping">插件映射</param>
-        /// <param name="generator">插件生成器</param>
+        /// <param name="generator">插件生成器,用于扩展</param>
         public static void Build(this object target, Dictionary<string, string> mapping, Func<string, object> generator)
         {
             replaceInterface(target, mapping);
